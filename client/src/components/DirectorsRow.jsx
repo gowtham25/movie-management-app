@@ -24,6 +24,7 @@ const DirectorsRow = ({ director }) => {
     <tr>
       <td>{director.name}</td>
       <td>{director.age}</td>
+      <td>{director.mailId}</td>
       <td>
         <button className="btn btn-danger btn-sm" onClick={deleteDirector}>
           <FaTrash />

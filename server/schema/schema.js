@@ -42,6 +42,7 @@ const DirectorType = new GraphQLObjectType({
     id: { type: GraphQLID },
     name: { type: GraphQLString },
     age: { type: GraphQLInt },
+    mailId: { type: GraphQLString },
     movie: {
       type: new GraphQLList(MovieType),
       resolve: (parent, args) => {
@@ -59,11 +60,13 @@ const Mutation = new GraphQLObjectType({
       args: {
         name: { type: GraphQLString },
         age: { type: GraphQLInt },
+        mailId: { type: GraphQLString },
       },
       resolve(parent, args) {
         let director = new Director({
           name: args.name,
           age: args.age,
+          mailId: args.mailId
         });
         return director.save();
       },

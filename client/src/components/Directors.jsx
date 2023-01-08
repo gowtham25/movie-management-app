@@ -18,6 +18,7 @@ const Directors = () => {
             <tr>
               <th>Name</th>
               <th>Age</th>
+              <th>Mail</th>
               <th></th>
             </tr>
           </thead>

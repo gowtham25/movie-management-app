@@ -6,6 +6,7 @@ const GET_DIRECTORS = gql`
       id
       name
       age
+      mailId
     }
   }
 `;

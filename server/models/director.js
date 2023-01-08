@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const directorSchema = new Schema({
     name: String,
     age: Number,
+    mailId: String
 })
 
 module.exports = mongoose.model('Director', directorSchema);
